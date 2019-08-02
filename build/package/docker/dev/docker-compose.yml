@@ -2,6 +2,19 @@ version: '3.5'
 
 services:
 
+  image-preview-api:
+    build:
+      context: ../../../..
+      dockerfile: ./build/package/docker/dev/Dockerfile
+    container_name: image-preview-api
+    restart: always
+    networks:
+      - image-preview
+    expose:
+      - "9090"
+    ports:
+      - "9090:9090"
+
 networks:
 
   image-preview:
