@@ -1,4 +1,7 @@
-test:
+download-dependencies:
+	go mod download
+
+test: download-dependencies
 	go test -v ./...
 
 run-dev-docker: test
