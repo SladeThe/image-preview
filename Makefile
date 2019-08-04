@@ -1,5 +1,5 @@
 test:
-	go test ./...
+	go test -v ./...
 
 run-dev-docker: test
 	rm -rf ./build/bin/*
