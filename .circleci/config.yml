@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: circleci/golang:1.12
 
-    working_directory: /go/src/github.com/SladeThe/image-preview
+    working_directory: /go/image-preview
     steps:
       - checkout
       - run: make test
